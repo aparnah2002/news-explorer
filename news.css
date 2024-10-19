@@ -55,3 +55,22 @@ body {
     background-color: black;
     color: white;
 }
+
+#news-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* background-color: aquamarine; */
+    margin: 20px;
+}
+
+.main-news-item,
+.news-item {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid;
+}
+
+.main-news-item {
+    grid-column: span 2;
+}
+
