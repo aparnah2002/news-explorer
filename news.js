@@ -41,3 +41,5 @@ entertainmentButton.addEventListener('click', () => {
     entertainmentButton.classList.add('active-button');
     displayNews(filteredData, itemsToShow);
 });
+
+displayNews(sortedData, itemsToShow);
