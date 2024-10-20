@@ -369,4 +369,32 @@ const sortedData = data.sort((a,b)=> new Date(b.dateAndTime) - new Date(a.dateAn
 let ItemsToShow = 7;
 let currentCategory = 'all';
 
+function display(newsData, itemsToDisplay) {
+    newsSection.innerHTML = ''; // Clear previous content
+
+    for (let i = 0; i < Math.min(itemsToDisplay, newsData.length); i++) {
+
+        let newsItem = document.createElement('div');
+
+        let heading = document.createElement('h2');
+        heading.textContent = newsData[i].title;
+        newsItem.appendChild(heading);
+
+        let date = document.createElement('p');
+        date.textContent = newsData[i].dateAndTime;
+        newsItem.appendChild(date);
+
+        let content = document.createElement('p');
+        content.textContent = newsData[i].content;
+        newsItem.appendChild(content);
+
+        if (i === 0) {
+            newsItem.classList.add('main-news-item');
+        } else {
+            newsItem.classList.add('news-item');
+        }
+
+        newsSection.appendChild(newsItem);
+    }
+}
 
