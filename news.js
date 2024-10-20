@@ -364,6 +364,5 @@ const searchInput = document.querySelector('input');
 
 const buttonArray = [allButton, businessButton, politicsButton, sportsButton, entertainmentButton];
 
-let sortedData = data.sort((a, b) => new Date(b.dateAndTime) - new Date(a.dateAndTime));
-let itemsToShow = 7; // Initial number of items to display
-let currentCategory = 'all'; // Tracks the currently selected category
+
+
