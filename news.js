@@ -396,5 +396,12 @@ function display(newsData, itemsToDisplay) {
 
         newsSection.appendChild(newsItem);
     }
+
+     // If all items are shown, hide the "Show More" button
+     if (itemsToDisplay >= newsData.length) {
+        showMoreButton.style.display = 'none';
+    } else {
+        showMoreButton.style.display = 'block';
+    }
 }
 
