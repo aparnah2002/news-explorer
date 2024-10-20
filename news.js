@@ -405,3 +405,4 @@ function display(newsData, itemsToDisplay) {
     }
 }
 
+
