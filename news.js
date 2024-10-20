@@ -364,5 +364,9 @@ const searchInput = document.querySelector('input');
 
 const buttonArray = [allButton, businessButton, politicsButton, sportsButton, entertainmentButton];
 
+//sort data in the descending order of date
+const sortedData = data.sort((a,b)=> new Date(b.dateAndTime) - new Date(a.dateAndTime));
+let ItemsToShow = 7;
+let currentCategory = 'all';
 
 
